@@ -5,7 +5,12 @@ import android.os.Environment;
 public class Constants {
 
     //apilicense
-    public static String apilicence = "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArie0pEfCFNWlqZ5x0vLLD2W0rQ/nFg3AGlAKh0U4U9GNwirUyxYluqcn1131aLUd2ff1IQ+eILzm/TKvX2KDsXUSgU0Jcl+ar/oSLlXy8RvevK1JmN2CPgotGCoLiTiRSw2SbprvQ+sUt6Pk0DJy4YWrm1SFAqYJuGeCIkRlaihZlN6nIgtdEcmw4XnRGuGtqkZm9CV6iRrzaeh1qk4kEhPbFlldpk+jBZJ3C/vlWvtfEqf+Fijb1Z5v+IoYNBxykzkpbMkBkuWWDw+hdZyp/cRyPhtjIL/g5zNTw1fgtPYR6n5iNmUpJFRREUSvXXQf+7i0EX2tz6IwNk9EX/xqdwIDAQAB";
+    public static String apilicence = "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAijhsJ1/Vw+" +
+            "acxC5QsweGpwbFEjgNi390j7IqHnqW4Vb16Y0BjCytHNoWeYYoXxUO/rlvDYI/yfW5AlOgtliKUBHD22" +
+            "LGVnhw7S6jyI4+hZo84toAHifD2mOLy6yMusDZoNoMl3rtn9nklaeHnitfOUjS3zsWLOnFgv0Wu3eKL97" +
+            "3gHIbe14DIam7X4Kk6DA4bJZ+ZKuzIOLSUXt0WmnLTb8oWNJPFVTmQYJis4BRy7XiFmcJ6WFzhuS0jwKhJ" +
+            "F+WNRYwzr/gI8zKlW5bDRLgKOr2gGtLebZKKmh" +
+            "4TNBpczip851we/x4JNx+wQHU0WAcpm1obajiKMGa23BuJnaVhwIDAQAB";
 
     public static String SKU_NAME = "com.sharon.trollbabatelugu";
     //    Facebook Creds
