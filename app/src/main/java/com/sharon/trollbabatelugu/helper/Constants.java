@@ -13,26 +13,24 @@ public class Constants {
             "4TNBpczip851we/x4JNx+wQHU0WAcpm1obajiKMGa23BuJnaVhwIDAQAB";
 
     public static String SKU_NAME = "com.sharon.trollbabatelugu";
+
     //    Facebook Creds
-    public static String facebook_app_id = "482856168756600";
-    public static String facebook_app_token = "482856168756600|Oz-RWx6e1U5z011vOooc1Io1v2c";
+    public static String facebook_app_id = "1968121726796573";
+    public static String facebook_app_token = "1968121726796573|Cxh_FFCgNzemgn501kd31znr9RM";
 
     //Ads
-    public static String admob_app_id = "ca-app-pub-1740451756664908~2651873569";
+    public static String admob_app_id = "ca-app-pub-1740451756664908~5327604377";
 
-    public static String admob_banner_main = "ca-app-pub-1740451756664908/5745721011";
-    public static String bannerAd_videopage = "ca-app-pub-1740451756664908/3049738749";
-    public static String admob_interstitialpages = "ca-app-pub-1740451756664908/3896796189";
-    public static String admob_interstitialaddremove = "ca-app-pub-1740451756664908/6787339949";
-
-
-//    public static String admob_app_id = "";
+    public static String admob_banner_main = "ca-app-pub-1740451756664908/5262044516";
+    public static String bannerAd_videopage = "ca-app-pub-1740451756664908/4112614377";
+    public static String admob_interstitialpages = "ca-app-pub-1740451756664908/2771612549";
+    public static String admob_interstitialaddremove = "ca-app-pub-1740451756664908/6616979475";
 
     //    Pages ID
-    public static String id_page1 = "/1378273462500897/posts";
+    public static String id_page1 = "/1633070143683813/posts";
     public static String id_page2 = "/960867090618476/posts";
-    public static String id_page3 = "/457127117670835/posts";
-    public static String id_page4 = "/1633070143683813/posts";
+    public static String id_page3 = "/1378273462500897/posts";
+    public static String id_page4 = "/457127117670835/posts";
     public static String id_page5 = "/342039216276292/posts";
     public static String id_page6 = "/399608476866584/posts";
     public static String id_page7 = "/297670370416485/posts";
@@ -61,5 +59,5 @@ public class Constants {
 
     //    Common
     public static String alert_developer_info = "Developed by MadRabbits\u00A9";
-    public static String added_share_message = "\nShared via Troll Baba Telugu : https://goo.gl/WBWL6a";
+    public static String added_share_message = "\nShared via Troll Baba Telugu : https://goo.gl/tpf3Uv";
 }

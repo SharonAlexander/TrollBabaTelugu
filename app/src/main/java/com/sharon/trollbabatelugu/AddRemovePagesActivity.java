@@ -97,24 +97,24 @@ public class AddRemovePagesActivity extends AppCompatActivity implements Compoun
         switch (compoundButton.getId()) {
             case R.id.checkPage1:
                 if (compoundButton.isChecked()) {
-                    MainActivity.result.addItemAtPosition(MainActivity.item_page1, 1);
+//                    MainActivity.result.addItemAtPosition(MainActivity.item_page1, 1);
                     checkPage1.setChecked(true);
-                    preferences.putCheckPref("page1", true);
+//                    preferences.putCheckPref("page1", true);
                 } else {
-                    MainActivity.result.removeItem(1);
-                    checkPage1.setChecked(false);
-                    preferences.putCheckPref("page1", false);
+//                    MainActivity.result.removeItem(1);
+                    checkPage1.setChecked(true);
+//                    preferences.putCheckPref("page1", false);
                 }
                 break;
             case R.id.checkPage2:
                 if (compoundButton.isChecked()) {
-//                    MainActivity.result.addItemAtPosition(MainActivity.item_page2, 2);
+                    MainActivity.result.addItemAtPosition(MainActivity.item_page2, 2);
                     checkPage2.setChecked(true);
-//                    preferences.putCheckPref("page2", true);
+                    preferences.putCheckPref("page2", true);
                 } else {
-//                    MainActivity.result.removeItem(2);
-                    checkPage2.setChecked(true);
-//                    preferences.putCheckPref("page2", false);
+                    MainActivity.result.removeItem(2);
+                    checkPage2.setChecked(false);
+                    preferences.putCheckPref("page2", false);
                 }
                 break;
             case R.id.checkPage3:

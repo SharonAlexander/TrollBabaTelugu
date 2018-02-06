@@ -9,7 +9,7 @@
     <string name="add_remove">Add/Remove Pages</string>
     <string name="sharetheapp">Share App with Friends</string>
 
-    <string name="app_share_message">For more trolls: Troll Baba Telugu !!\n https://goo.gl/WBWL6a</string>
+    <string name="app_share_message">For more trolls: Troll Baba Telugu !!\n https://goo.gl/tpf3Uv</string>
 
     <!--Permission Related-->
     <string name="storage_permission_prompt_message">Storage permission needed</string>
@@ -42,10 +42,10 @@
     <string name="visitfb">View in FB</string>
 
     <!--PageNames-->
-    <string name="pagename_1">Troll Telugu Cinema</string>
+    <string name="pagename_1">Telugu Punch Dialogues</string>
     <string name="pagename_2">Troll Tollywood Telugu Cinema</string>
-    <string name="pagename_3">Comedy and Punch Dialogues</string>
-    <string name="pagename_4">Telugu Punch Dialogues</string>
+    <string name="pagename_3">Troll Telugu Cinema</string>
+    <string name="pagename_4">Comedy and Punch Dialogues</string>
     <string name="pagename_5">Epic Top Troll Comments Telugu</string>
     <string name="pagename_6">Chudu Thamudu NuVu Btech ah</string>
     <string name="pagename_7">Telugu Comedy Trolls</string>

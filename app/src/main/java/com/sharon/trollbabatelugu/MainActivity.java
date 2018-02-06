@@ -124,7 +124,7 @@ public class MainActivity extends AppCompatActivity {
         createDrawerClicks();
 
         //The First Page is ICU. And cannot be changed from addremove
-        result.setSelection(2);
+        result.setSelection(1);
         result.getActionBarDrawerToggle().setDrawerIndicatorEnabled(true);
     }
 
@@ -136,8 +136,8 @@ public class MainActivity extends AppCompatActivity {
         } else if (frag != null) {
             Fragment fragment = new ContentActivity();
             Bundle bundle = new Bundle();
-            bundle.putString("id", Constants.id_page2);
-            bundle.putInt("pic", R.drawable.icon_page2);
+            bundle.putString("id", Constants.id_page1);
+            bundle.putInt("pic", R.drawable.icon_page4);
             fragment.setArguments(bundle);
             this.getFragmentManager().beginTransaction().replace(R.id.mainFrame, fragment).commit();
             result.closeDrawer();
@@ -301,7 +301,7 @@ public class MainActivity extends AppCompatActivity {
                 switch ((int) drawerItem.getIdentifier()) {
                     case 1:
                         bundle.putString("id", Constants.id_page1);
-                        bundle.putInt("pic", R.drawable.icon_page1);
+                        bundle.putInt("pic", R.drawable.icon_page3);
                         break;
                     case 2:
                         bundle.putString("id", Constants.id_page2);
@@ -309,11 +309,11 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case 3:
                         bundle.putString("id", Constants.id_page3);
-                        bundle.putInt("pic", R.drawable.icon_page3);
+                        bundle.putInt("pic", R.drawable.icon_page4);
                         break;
                     case 4:
                         bundle.putString("id", Constants.id_page4);
-                        bundle.putInt("pic", R.drawable.icon_page4);
+                        bundle.putInt("pic", R.drawable.icon_page1);
                         break;
                     case 5:
                         bundle.putString("id", Constants.id_page5);
@@ -441,8 +441,18 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void alertExitPic() {
-        Toast.makeText(MainActivity.this, R.string.exit_toast, Toast.LENGTH_SHORT).show();
-        MainActivity.super.onBackPressed();
+        new AlertDialog.Builder(this)
+                .setTitle("Exit")
+                .setMessage("Are you sure? Champestha")
+                .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        Toast.makeText(MainActivity.this, R.string.exit_toast, Toast.LENGTH_SHORT).show();
+                        MainActivity.super.onBackPressed();
+                    }
+                })
+                .setIcon(R.mipmap.ic_launcher)
+                .show();
     }
 
     private void showPageError() {
