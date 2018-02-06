@@ -1,0 +1,91 @@
+<resources>
+    <string name="app_name">Troll Baba Telugu</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="about">About us</string>
+    <string name="add_remove">Add/Remove Pages</string>
+    <string name="sharetheapp">Share App with Friends</string>
+
+    <string name="app_share_message">For more trolls: Troll Baba Telugu !!\n https://goo.gl/WBWL6a</string>
+
+    <!--Permission Related-->
+    <string name="storage_permission_prompt_message">Storage permission needed</string>
+    <string name="permission_prompt_settings_return">From settings</string>
+
+    <!--FullScreen-->
+    <string name="coming_soon">Coming Soon</string>
+
+    <!--InternetConnectionChecker-->
+    <string name="alert_internet_title">No Internet Connection</string>
+    <string name="alert_internet_message">Troll Master requires Internet connection to work. Please check your connection and try again</string>
+
+    <!--PlayVideo-->
+    <string name="alert_video_wait_message">Please pause till video loads completely for viewing without interruption.</string>
+
+    <!--Helper Methods-->
+    <string name="helper_downloading">Downloading…</string>
+    <string name="toast_whatsapp_not_found">Whatsapp not installed</string>
+    <string name="intent_title_share_images">Share images…</string>
+    <string name="intent_title_share">Share…</string>
+    <string name="download_success">Downloaded Successfully</string>
+    <string name="error">Error</string>
+    <string name="unsupported_error">Unsupported Format Error</string>
+
+    <!--Layout-->
+    <string name="open_link_in_browser">Open Link in Browser</string>
+    <string name="download">Download</string>
+    <string name="share">Share</string>
+    <string name="retry">Retry</string>
+    <string name="visitfb">View in FB</string>
+
+    <!--PageNames-->
+    <string name="pagename_1">Troll Telugu Cinema</string>
+    <string name="pagename_2">Troll Tollywood Telugu Cinema</string>
+    <string name="pagename_3">Comedy and Punch Dialogues</string>
+    <string name="pagename_4">Telugu Punch Dialogues</string>
+    <string name="pagename_5">Epic Top Troll Comments Telugu</string>
+    <string name="pagename_6">Chudu Thamudu NuVu Btech ah</string>
+    <string name="pagename_7">Telugu Comedy Trolls</string>
+    <string name="pagename_8">Sarcasm Telugu</string>
+    <string name="pagename_9">Hey Telugu</string>
+    <string name="pagename_10">Troll Cricket Telugu Version</string>
+    <string name="pagename_11">Sports and WWE Telugu</string>
+    <string name="pagename_12">Srm Telugu Trolls</string>
+    <string name="pagename_13">i\'m a ca student</string>
+    <string name="pagename_14">IITRTeluguMemes</string>
+    <string name="pagename_15">NIITR Telugu Trolls</string>
+
+    <!--Settings-->
+    <string name="aboutus">About Us</string>
+    <string name="prefrence_rateapp_title">Let us know if you are enjoying!</string>
+    <string name="preference_rateapp_dialogTitle">Rate Troll Baba!</string>
+    <string name="purchase_error">Error</string>
+    <string name="purchase_already_owned">Error in purchase</string>
+    <string name="captioninclude">Include caption in shared message</string>
+    <string name="captionsummarychecked">Troll text is added to shared message</string>
+    <string name="captionsummaryunchecked">Troll text is not added to shared message</string>
+    <string name="preference_addRemove_dialogTitle">Add/Remove Pages</string>
+    <string name="exit_toast">Don\'t repeat this bro!!:(</string>
+    <string name="settings_purchased_info">Already purchased. Thanks!</string>
+    <string name="settings_purchase_cancel">You can try again.</string>
+    <string name="settings_purchase_success">Thank you bro!</string>
+
+    <!--MainActivity-->
+    <string name="page_error_title">Page Error</string>
+    <string name="page_error_description">The page cannot be displayed.  Try another page instead</string>
+
+    <!--DownloadHelper-->
+    <string name="toast_download_finished">Download Finished Successfully</string>
+    <string name="toast_download_failed">TBT: Download Failed</string>
+    <string name="notification_update_tilte">Downloading your trolls :)</string>
+    <string name="notification_end_title">Downloaded Successfully</string>
+    <string name="notification_cancel_title">Download error</string>
+
+    <!--Datum-->
+    <string name="datum_nothingtodownload_error">No picture or video found! Cannot download</string>
+    <string name="datum_youtube_video_error">Cannot download youtube videos</string>
+
+</resources>

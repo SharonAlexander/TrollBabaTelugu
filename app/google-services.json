@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "38780902014",
+    "firebase_url": "https://troll-baba-telugu.firebaseio.com",
+    "project_id": "troll-baba-telugu",
+    "storage_bucket": "troll-baba-telugu.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:38780902014:android:d8a6825c36a27304",
+        "android_client_info": {
+          "package_name": "com.sharon.trollbabatelugu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "38780902014-98o4kf40biu3cmga9kmlpa18tms2sl93.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBc0kpRPHHvlTY-B655eVZHrhBemdcl8cc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
