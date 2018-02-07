@@ -64,11 +64,11 @@
     <string name="preference_rateapp_dialogTitle">Rate Troll Baba</string>
     <string name="purchase_error">Error</string>
     <string name="purchase_already_owned">Error in purchase</string>
-    <string name="captioninclude">Include caption in shared message</string>
-    <string name="captionsummarychecked">Troll text is added to shared message</string>
-    <string name="captionsummaryunchecked">Troll text is not added to shared message</string>
+    <string name="captioninclude">Remove caption in shared message</string>
+    <string name="captionsummaryunchecked">Troll text is added to shared message</string>
+    <string name="captionsummarychecked">Troll text is not added to shared message</string>
     <string name="preference_addRemove_dialogTitle">Add/Remove Pages</string>
-    <string name="exit_toast">Come back chief..! Trolls waiting for you:)</string>
+    <string name="exit_toast">Come back babu..! Trolls waiting for you:)</string>
     <string name="settings_purchased_info">Already purchased. Thanks!</string>
     <string name="settings_purchase_cancel">You can try again.</string>
     <string name="settings_purchase_success">Thank you bro!</string>

@@ -27,7 +27,7 @@ public class ShareHelper {
         Intent intent = new Intent(Intent.ACTION_SEND);
         intent.setType("text/plain");
         intent.setPackage(Constants.whatsapp_package);
-        if (preferences.getCheckPref("captioninclude")) {
+        if (!preferences.getCheckPref("captioninclude")) {
             text = textBody;
         }
 
@@ -59,7 +59,7 @@ public class ShareHelper {
             fileUri = Uri.parse(filePath);
         }
         Intent shareIntent = new Intent();
-        if (preferences.getCheckPref("captioninclude")) {
+        if (!preferences.getCheckPref("captioninclude")) {
             text = textBody;
         }
         if (type.equals("link") || type.equals("video")) {
