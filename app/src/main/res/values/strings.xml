@@ -9,7 +9,7 @@
     <string name="add_remove">Add/Remove Pages</string>
     <string name="sharetheapp">Share App with Friends</string>
 
-    <string name="app_share_message">Excited for more trolls: Troll Baba Telugu !!\n https://goo.gl/tpf3Uv</string>
+    <string name="app_share_message">ఒక్కసారి యూస్ చేస్తే , ఆశ్చర్యానికి లోనవుతారు\nExcited for more trolls: Troll Baba Telugu !!\n https://goo.gl/tpf3Uv</string>
 
     <!--Permission Related-->
     <string name="storage_permission_prompt_message">Storage permission needed</string>
@@ -77,7 +77,7 @@
     <string name="page_error_title">Page Error</string>
     <string name="page_error_description">The page cannot be displayed.  Try another page instead</string>
     <string name="mainact_exit_toast">Exit</string>
-    <string name="mainact_exit_desc">Are you sure?</string>
+    <string name="mainact_exit_desc">Are you sure to exit app?</string>
 
     <!--DownloadHelper-->
     <string name="toast_download_finished">Download Finished Successfully</string>

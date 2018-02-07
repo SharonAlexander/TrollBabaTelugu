@@ -9,6 +9,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 import com.facebook.AccessToken;
 import com.facebook.GraphRequest;
@@ -28,6 +29,7 @@ public class ContentActivity extends Fragment {
 
     AccessToken accessToken;
     RecyclerView recyclerView;
+    ImageView noInternetImage;
     FastItemAdapter<Datum> fastAdapter;
     FirstResponse fr, f;
     String after;
@@ -53,11 +55,23 @@ public class ContentActivity extends Fragment {
 
         getActivity().setTitle(getString(R.string.app_name));
 
+        noInternetImage = rootView.findViewById(R.id.noInternetImage);
         internetConnectionChecker = new InternetConnectionChecker(getActivity());
         if (!internetConnectionChecker.isOnline()) {
             internetConnectionChecker.showNotConnectedDialog();
+            noInternetImage.setVisibility(View.VISIBLE);
         }
-
+        noInternetImage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (internetConnectionChecker.isOnline()) {
+                    noInternetImage.setVisibility(View.GONE);
+                    makeFirstCall();
+                } else {
+                    internetConnectionChecker.showNotConnectedDialog();
+                }
+            }
+        });
         id = getArguments().getString("id");
         page_pic = getArguments().getInt("pic");
 
