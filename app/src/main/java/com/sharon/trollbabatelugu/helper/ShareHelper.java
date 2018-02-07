@@ -6,9 +6,9 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Parcelable;
-import android.text.TextUtils;
 import android.widget.Toast;
 
+import com.sharon.trollbabatelugu.Preferences;
 import com.sharon.trollbabatelugu.R;
 
 import java.io.ByteArrayOutputStream;
@@ -18,13 +18,18 @@ import java.io.IOException;
 
 public class ShareHelper {
 
+    Preferences preferences;
+    String text = "";
 
     public void shareImageOnWhatsapp(Context context, Bitmap bitmap, String textBody, String id) {
         checkFolders();
+        preferences = new Preferences(context);
         Intent intent = new Intent(Intent.ACTION_SEND);
         intent.setType("text/plain");
         intent.setPackage(Constants.whatsapp_package);
-        intent.putExtra(Intent.EXTRA_TEXT, !TextUtils.isEmpty(textBody) ? textBody : "");
+        if (preferences.getCheckPref("captioninclude")) {
+            text = textBody;
+        }
 
         Parcelable fileUri = null;
         String filePath = Constants.folder_main_path + Constants.folder_name + id + ".png";
@@ -32,7 +37,7 @@ public class ShareHelper {
             fileUri = Uri.parse(filePath);
         }
 
-        intent.putExtra(Intent.EXTRA_TEXT, textBody + Constants.added_share_message);
+        intent.putExtra(Intent.EXTRA_TEXT, text + Constants.added_share_message);
         intent.setType("text/plain");
         intent.setAction(Intent.ACTION_SEND);
         intent.putExtra(Intent.EXTRA_STREAM, fileUri);
@@ -47,16 +52,20 @@ public class ShareHelper {
 
     public void shareMain(Context context, Bitmap bitmap, String textBody, String id, String link, String type) {
         checkFolders();
+        preferences = new Preferences(context);
         Parcelable fileUri = null;
         String filePath = Constants.folder_main_path + Constants.folder_name + id + ".png";
         if (saveBitmap(bitmap, filePath)) {
             fileUri = Uri.parse(filePath);
         }
         Intent shareIntent = new Intent();
-        if (type.equals("link") || type.equals("video")) {
-            textBody = link + "\n\n" + textBody;
+        if (preferences.getCheckPref("captioninclude")) {
+            text = textBody;
         }
-        shareIntent.putExtra(Intent.EXTRA_TEXT, textBody + Constants.added_share_message);
+        if (type.equals("link") || type.equals("video")) {
+            text = link + "\n\n" + text;
+        }
+        shareIntent.putExtra(Intent.EXTRA_TEXT, text + Constants.added_share_message);
         shareIntent.setType("text/plain");
         shareIntent.setAction(Intent.ACTION_SEND);
         if (type.equals("photo")) {
