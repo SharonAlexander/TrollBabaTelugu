@@ -1,6 +1,5 @@
 package com.sharon.trollbabatelugu.helper;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -20,7 +19,7 @@ import java.io.IOException;
 public class ShareHelper {
 
 
-    public void shareImageOnWhatsapp(Activity activity, Bitmap bitmap, String textBody, String id) {
+    public void shareImageOnWhatsapp(Context context, Bitmap bitmap, String textBody, String id) {
         checkFolders();
         Intent intent = new Intent(Intent.ACTION_SEND);
         intent.setType("text/plain");
@@ -39,14 +38,14 @@ public class ShareHelper {
         intent.putExtra(Intent.EXTRA_STREAM, fileUri);
         intent.setType("image/*");
         try {
-            activity.startActivity(intent);
+            context.startActivity(intent);
         } catch (android.content.ActivityNotFoundException ex) {
             ex.printStackTrace();
-            Toast.makeText(activity, activity.getString(R.string.toast_whatsapp_not_found), Toast.LENGTH_SHORT).show();
+            Toast.makeText(context, context.getString(R.string.toast_whatsapp_not_found), Toast.LENGTH_SHORT).show();
         }
     }
 
-    public void shareMain(Activity activity, Bitmap bitmap, String textBody, String id, String link, String type) {
+    public void shareMain(Context context, Bitmap bitmap, String textBody, String id, String link, String type) {
         checkFolders();
         Parcelable fileUri = null;
         String filePath = Constants.folder_main_path + Constants.folder_name + id + ".png";
@@ -64,25 +63,25 @@ public class ShareHelper {
             shareIntent.putExtra(Intent.EXTRA_STREAM, fileUri);
             shareIntent.setType("image/*");
         }
-        activity.startActivity(Intent.createChooser(shareIntent, activity.getString(R.string.intent_title_share)));
+        context.startActivity(Intent.createChooser(shareIntent, context.getString(R.string.intent_title_share)));
     }
 
-    public void shareAppDetails(Activity activity) {
+    public void shareAppDetails(Context context) {
         checkFolders();
-        saveBitmapToFile(activity);
+        saveBitmapToFile(context);
         Parcelable uri = Uri.parse(Constants.folder_main_path + Constants.folder_name + Constants.hidden_folder_for_app_share + "app_share_image.jpeg");
         Intent intent = new Intent();
         intent.setType("text/plain");
-        intent.putExtra(Intent.EXTRA_TEXT, activity.getString(R.string.app_share_message));
+        intent.putExtra(Intent.EXTRA_TEXT, context.getString(R.string.app_share_message));
         intent.putExtra(Intent.EXTRA_STREAM, uri);
         intent.setType("image/jpeg");
         intent.setAction(Intent.ACTION_SEND);
 
         try {
-            activity.startActivity(Intent.createChooser(intent, activity.getString(R.string.intent_title_share)));
+            context.startActivity(Intent.createChooser(intent, context.getString(R.string.intent_title_share)));
         } catch (android.content.ActivityNotFoundException ex) {
             ex.printStackTrace();
-            Toast.makeText(activity, activity.getString(R.string.error), Toast.LENGTH_SHORT).show();
+            Toast.makeText(context, context.getString(R.string.error), Toast.LENGTH_SHORT).show();
         }
     }
 

@@ -122,7 +122,7 @@ public class Datum extends AbstractItem<Datum, Datum.ViewHolder> {
         String[] perms = {Manifest.permission.WRITE_EXTERNAL_STORAGE};
         if (EasyPermissions.hasPermissions(context, perms)) {
 
-            new ShareHelper().shareMain((Activity) context, item.getBitmap(), item.getMessage(), item.getId(), item.getPermalinkUrl(), item.getItemType());
+            new ShareHelper().shareMain(context, item.getBitmap(), item.getMessage(), item.getId(), item.getPermalinkUrl(), item.getItemType());
         } else {
             EasyPermissions.requestPermissions((Activity) context, context.getString(R.string.storage_permission_prompt_message),
                     003, perms);

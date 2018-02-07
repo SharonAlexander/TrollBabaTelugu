@@ -11,6 +11,7 @@ import android.preference.Preference;
 import android.preference.PreferenceFragment;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AlertDialog;
+import android.support.v7.app.AppCompatDelegate;
 import android.widget.Toast;
 
 import com.sharon.trollbabatelugu.helper.Constants;
@@ -49,7 +50,7 @@ public class Settings extends PreferenceFragment {
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.settings_preferences);
-
+        AppCompatDelegate.setCompatVectorFromResourcesEnabled(true);
         settingspreferences = new Preferences(getActivity());
 
         getActivity().setTitle("Settings");

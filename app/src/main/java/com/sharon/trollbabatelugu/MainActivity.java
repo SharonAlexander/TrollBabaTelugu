@@ -403,7 +403,7 @@ public class MainActivity extends AppCompatActivity {
     public void shareApp(Context context) {
         String[] perms = {android.Manifest.permission.WRITE_EXTERNAL_STORAGE};
         if (EasyPermissions.hasPermissions(context, perms)) {
-            new ShareHelper().shareAppDetails((Activity) context);
+            new ShareHelper().shareAppDetails(context);
         } else {
             EasyPermissions.requestPermissions((Activity) context, context.getString(R.string.storage_permission_prompt_message),
                     005, perms);
