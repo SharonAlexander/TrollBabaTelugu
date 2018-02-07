@@ -84,7 +84,7 @@ public class Settings extends PreferenceFragment {
         Preference rateus = findPreference("rateus");
         rateus.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
             public boolean onPreferenceClick(Preference preference) {
-                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=com.sharon.trollmastermalayalam"));
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=com.sharon.trollbabatelugu"));
                 startActivity(intent);
                 return false;
             }
