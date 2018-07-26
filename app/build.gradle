@@ -1,13 +1,14 @@
 apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
 
 android {
-    compileSdkVersion 27
+    compileSdkVersion 28
     defaultConfig {
         applicationId "com.sharon.trollbabatelugu"
         minSdkVersion 16
-        targetSdkVersion 27
-        versionCode 2
-        versionName "1.0"
+        targetSdkVersion 28
+        versionCode 3
+        versionName '2.0'
     }
     buildTypes {
         release {
@@ -15,35 +16,39 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    buildToolsVersion '28.0.0'
+    productFlavors {
+    }
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
-    implementation 'com.facebook.android:facebook-android-sdk:4.28.0'
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    //noinspection GradleDynamicVersion
+    implementation 'com.facebook.android:facebook-android-sdk:4.+'
     implementation 'com.squareup.picasso:picasso:2.5.2'
-    implementation 'com.android.support:design:27.0.2'
-    implementation 'com.android.support:appcompat-v7:27.0.2'
-    implementation 'com.android.support:support-v4:27.0.2'
-    implementation 'com.android.support:support-vector-drawable:27.0.2'
-    implementation 'com.android.support:recyclerview-v7:27.0.2'
-    implementation 'com.android.support:cardview-v7:27.0.2'
-    implementation 'com.android.support:customtabs:27.0.2'
+    implementation 'com.android.support:customtabs:28.0.0-alpha3'
     implementation 'com.google.code.gson:gson:2.8.1'
     implementation 'pub.devrel:easypermissions:1.1.2'
     implementation 'cn.jzvd:jiaozivideoplayer:6.2.4'
     implementation 'com.github.joaquimley:faboptions:1.1.2'
     implementation 'com.mani:ThinDownloadManager:1.4.0'
     implementation 'com.github.chrisbanes:PhotoView:2.1.3'
-    implementation 'com.mikepenz:fastadapter-commons:3.2.0@aar'
+    implementation 'com.mikepenz:fastadapter-commons:3.2.7@aar'
     implementation 'com.mikepenz:fastadapter-extensions:3.2.0@aar'
-    implementation("com.mikepenz:materialdrawer:6.0.2@aar") {
+    implementation('com.mikepenz:materialdrawer:6.0.8@aar') {
         transitive = true
     }
-    implementation 'com.google.firebase:firebase-core:11.8.0'
-    implementation 'com.google.firebase:firebase-ads:11.8.0'
-    releaseImplementation 'com.google.firebase:firebase-crash:11.8.0'
-    implementation 'com.facebook.android:audience-network-sdk:4.27.0'
-    implementation 'com.google.ads.mediation:facebook:4.27.0.0'
+    implementation 'com.google.firebase:firebase-core:16.0.1'
+    implementation 'com.google.firebase:firebase-ads:15.0.1'
+    implementation 'com.crashlytics.sdk.android:crashlytics:2.9.4'
+    implementation 'com.facebook.android:audience-network-sdk:4.28.2'
+    implementation 'com.google.ads.mediation:facebook:4.28.2.0'
+    implementation 'com.android.support:design:28.0.0-alpha3'
+    implementation 'com.android.support:support-v4:28.0.0-alpha3'
+    implementation 'com.android.support:appcompat-v7:28.0.0-alpha3'
+    implementation 'com.android.support:recyclerview-v7:28.0.0-alpha3'
+    implementation 'com.android.support:cardview-v7:28.0.0-alpha3'
+    implementation 'com.android.support:support-vector-drawable:28.0.0-alpha3'
 }
 apply plugin: 'com.google.gms.google-services'
