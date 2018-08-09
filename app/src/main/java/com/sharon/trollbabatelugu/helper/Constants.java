@@ -24,7 +24,7 @@ public class Constants {
 
     //    Facebook Creds
     public static String facebook_app_id = "1968121726796573";
-    public static String facebook_app_token = "1968121726796573|Cxh_FFCgNzemgn501kd31znr9RM";
+    public static String facebook_app_token = "482856168756600|Oz-RWx6e1U5z011vOooc1Io1v2c";
 
     //Ads
     public static String admob_app_id = "ca-app-pub-1740451756664908~5327604377";
@@ -50,6 +50,13 @@ public class Constants {
     public static String id_page13 = "/738165793032986/posts";
     public static String id_page14 = "/150712328905681/posts";
     public static String id_page15 = "/554296658261126/posts";
+    public static String id_page16 = "/261341130676448/posts"; //manam thopulu ehe
+    public static String id_page17 = "/1405971149702827/posts"; //btech students ikkada
+    public static String id_page18 = "/1591656047731176/posts"; //comedy tonic telugu
+    public static String id_page19 = "/1712142212393521/posts"; //comedy memes telugu
+    public static String id_page20 = "/794421970661242/posts"; //rvcj telugu
+    public static String id_page21 = "/1077041102321117/posts"; //btech kastalu
+    public static String id_page22 = "/1590797611187468/posts"; //fukkard
 
     //    Feed
     public static String feed_limit = "25";

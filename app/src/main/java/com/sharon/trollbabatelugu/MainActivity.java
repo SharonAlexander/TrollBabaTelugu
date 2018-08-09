@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
     static Drawer result;
     static PrimaryDrawerItem item_page1, item_page2, item_page3, item_page4, item_page5, item_page6, item_page7,
             item_page8, item_page9, item_page10, item_page11, item_page12, item_page13,
-            item_page14, item_page15;
+            item_page14, item_page15, item_page16, item_page17, item_page18, item_page19, item_page20, item_page21, item_page22;
     Toolbar toolbar;
     AccountHeader headerResult;
     DividerDrawerItem item_divider;
@@ -110,6 +110,13 @@ public class MainActivity extends AppCompatActivity {
         preferences.putCheckPref("page13", true);
         preferences.putCheckPref("page14", true);
         preferences.putCheckPref("page15", true);
+        preferences.putCheckPref("page16", true);
+        preferences.putCheckPref("page17", true);
+        preferences.putCheckPref("page18", true);
+        preferences.putCheckPref("page19", true);
+        preferences.putCheckPref("page20", true);
+        preferences.putCheckPref("page21", true);
+        preferences.putCheckPref("page22", true);
 
         preferences.setFirstTimeLaunch(false);
     }
@@ -186,6 +193,13 @@ public class MainActivity extends AppCompatActivity {
         item_page13 = new PrimaryDrawerItem().withIdentifier(13).withName(getString(R.string.pagename_13)).withIcon(R.drawable.icon_page13);
         item_page14 = new PrimaryDrawerItem().withIdentifier(14).withName(getString(R.string.pagename_14)).withIcon(R.drawable.icon_page14);
         item_page15 = new PrimaryDrawerItem().withIdentifier(15).withName(getString(R.string.pagename_15)).withIcon(R.drawable.icon_page15);
+        item_page16 = new PrimaryDrawerItem().withIdentifier(16).withName(getString(R.string.pagename_16)).withIcon(R.drawable.icon_page16);
+        item_page17 = new PrimaryDrawerItem().withIdentifier(17).withName(getString(R.string.pagename_17)).withIcon(R.drawable.icon_page17);
+        item_page18 = new PrimaryDrawerItem().withIdentifier(18).withName(getString(R.string.pagename_18)).withIcon(R.drawable.icon_page18);
+        item_page19 = new PrimaryDrawerItem().withIdentifier(19).withName(getString(R.string.pagename_19)).withIcon(R.drawable.icon_page19);
+        item_page20 = new PrimaryDrawerItem().withIdentifier(20).withName(getString(R.string.pagename_20)).withIcon(R.drawable.icon_page20);
+        item_page21 = new PrimaryDrawerItem().withIdentifier(21).withName(getString(R.string.pagename_21)).withIcon(R.drawable.icon_page21);
+        item_page22 = new PrimaryDrawerItem().withIdentifier(22).withName(getString(R.string.pagename_22)).withIcon(R.drawable.icon_page22);
 
         item_divider = new DividerDrawerItem();
 
@@ -242,6 +256,28 @@ public class MainActivity extends AppCompatActivity {
         if (preferences.getCheckPref("page15")) {
             result.addItem(item_page15);
         }
+        if (preferences.getCheckPref("page16")) {
+            result.addItem(item_page16);
+        }
+        if (preferences.getCheckPref("page17")) {
+            result.addItem(item_page17);
+        }
+        if (preferences.getCheckPref("page18")) {
+            result.addItem(item_page18);
+        }
+        if (preferences.getCheckPref("page19")) {
+            result.addItem(item_page19);
+        }
+        if (preferences.getCheckPref("page20")) {
+            result.addItem(item_page20);
+        }
+        if (preferences.getCheckPref("page21")) {
+            result.addItem(item_page21);
+        }
+        if (preferences.getCheckPref("page22")) {
+            result.addItem(item_page22);
+        }
+
         result.addItems(item_divider, item_addRemove, item_settings, item_about, item_shareTheApp);
     }
 
@@ -312,6 +348,34 @@ public class MainActivity extends AppCompatActivity {
                     case 15:
                         bundle.putString("id", Constants.id_page15);
                         bundle.putInt("pic", R.drawable.icon_page15);
+                        break;
+                    case 16:
+                        bundle.putString("id", Constants.id_page16);
+                        bundle.putInt("pic", R.drawable.icon_page16);
+                        break;
+                    case 17:
+                        bundle.putString("id", Constants.id_page17);
+                        bundle.putInt("pic", R.drawable.icon_page17);
+                        break;
+                    case 18:
+                        bundle.putString("id", Constants.id_page18);
+                        bundle.putInt("pic", R.drawable.icon_page18);
+                        break;
+                    case 19:
+                        bundle.putString("id", Constants.id_page19);
+                        bundle.putInt("pic", R.drawable.icon_page19);
+                        break;
+                    case 20:
+                        bundle.putString("id", Constants.id_page20);
+                        bundle.putInt("pic", R.drawable.icon_page20);
+                        break;
+                    case 21:
+                        bundle.putString("id", Constants.id_page21);
+                        bundle.putInt("pic", R.drawable.icon_page21);
+                        break;
+                    case 22:
+                        bundle.putString("id", Constants.id_page22);
+                        bundle.putInt("pic", R.drawable.icon_page22);
                         break;
 
                     case 100://settings

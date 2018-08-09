@@ -115,6 +115,55 @@
             android:text="@string/pagename_15"
             android:textSize="15sp" />
 
+        <CheckBox
+            android:id="@+id/checkPage16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pagename_16"
+            android:textSize="15sp" />
+
+        <CheckBox
+            android:id="@+id/checkPage17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pagename_17"
+            android:textSize="15sp" />
+
+        <CheckBox
+            android:id="@+id/checkPage18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pagename_18"
+            android:textSize="15sp" />
+
+        <CheckBox
+            android:id="@+id/checkPage19"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pagename_19"
+            android:textSize="15sp" />
+
+        <CheckBox
+            android:id="@+id/checkPage20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pagename_20"
+            android:textSize="15sp" />
+
+        <CheckBox
+            android:id="@+id/checkPage21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pagename_21"
+            android:textSize="15sp" />
+
+        <CheckBox
+            android:id="@+id/checkPage22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pagename_22"
+            android:textSize="15sp" />
+
 
     </LinearLayout>
 </ScrollView>

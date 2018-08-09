@@ -13,7 +13,7 @@ public class AddRemovePagesActivity extends AppCompatActivity implements Compoun
 
     CheckBox checkPage1, checkPage2, checkPage3, checkPage4, checkPage5, checkPage6, checkPage7, checkPage8,
             checkPage9, checkPage10, checkPage11, checkPage12, checkPage13, checkPage14,
-            checkPage15;
+            checkPage15, checkPage16, checkPage17, checkPage18, checkPage19, checkPage20, checkPage21, checkPage22;
     Preferences preferences;
 
     @Override
@@ -50,6 +50,13 @@ public class AddRemovePagesActivity extends AppCompatActivity implements Compoun
         checkPage13 = (CheckBox) findViewById(R.id.checkPage13);
         checkPage14 = (CheckBox) findViewById(R.id.checkPage14);
         checkPage15 = (CheckBox) findViewById(R.id.checkPage15);
+        checkPage16 = (CheckBox) findViewById(R.id.checkPage16);
+        checkPage17 = (CheckBox) findViewById(R.id.checkPage17);
+        checkPage18 = (CheckBox) findViewById(R.id.checkPage18);
+        checkPage19 = (CheckBox) findViewById(R.id.checkPage19);
+        checkPage20 = (CheckBox) findViewById(R.id.checkPage20);
+        checkPage21 = (CheckBox) findViewById(R.id.checkPage21);
+        checkPage22 = (CheckBox) findViewById(R.id.checkPage22);
 
     }
 
@@ -69,6 +76,13 @@ public class AddRemovePagesActivity extends AppCompatActivity implements Compoun
         checkPage13.setChecked(preferences.getCheckPref("page13"));
         checkPage14.setChecked(preferences.getCheckPref("page14"));
         checkPage15.setChecked(preferences.getCheckPref("page15"));
+        checkPage16.setChecked(preferences.getCheckPref("page16"));
+        checkPage17.setChecked(preferences.getCheckPref("page17"));
+        checkPage18.setChecked(preferences.getCheckPref("page18"));
+        checkPage19.setChecked(preferences.getCheckPref("page19"));
+        checkPage20.setChecked(preferences.getCheckPref("page20"));
+        checkPage21.setChecked(preferences.getCheckPref("page21"));
+        checkPage22.setChecked(preferences.getCheckPref("page22"));
 
     }
 
@@ -88,6 +102,13 @@ public class AddRemovePagesActivity extends AppCompatActivity implements Compoun
         checkPage13.setOnCheckedChangeListener(this);
         checkPage14.setOnCheckedChangeListener(this);
         checkPage15.setOnCheckedChangeListener(this);
+        checkPage16.setOnCheckedChangeListener(this);
+        checkPage17.setOnCheckedChangeListener(this);
+        checkPage18.setOnCheckedChangeListener(this);
+        checkPage19.setOnCheckedChangeListener(this);
+        checkPage20.setOnCheckedChangeListener(this);
+        checkPage21.setOnCheckedChangeListener(this);
+        checkPage22.setOnCheckedChangeListener(this);
 
 
     }
@@ -260,83 +281,83 @@ public class AddRemovePagesActivity extends AppCompatActivity implements Compoun
                     preferences.putCheckPref("page15", false);
                 }
                 break;
-//            case R.id.checkPage16:
-//                if (compoundButton.isChecked()) {
-//                    MainActivity.result.addItemAtPosition(MainActivity.item_page16, 5);
-//                    checkPage16.setChecked(true);
-//                    preferences.putCheckPref("page16", true);
-//                } else {
-//                    MainActivity.result.removeItem(16);
-//                    checkPage16.setChecked(false);
-//                    preferences.putCheckPref("page16", false);
-//                }
-//                break;
-//            case R.id.checkPage17:
-//                if (compoundButton.isChecked()) {
-//                    MainActivity.result.addItemAtPosition(MainActivity.item_page17, 5);
-//                    checkPage17.setChecked(true);
-//                    preferences.putCheckPref("page17", true);
-//                } else {
-//                    MainActivity.result.removeItem(17);
-//                    checkPage17.setChecked(false);
-//                    preferences.putCheckPref("page17", false);
-//                }
-//                break;
-//            case R.id.checkPage18:
-//                if (compoundButton.isChecked()) {
-//                    MainActivity.result.addItemAtPosition(MainActivity.item_page18, 5);
-//                    checkPage18.setChecked(true);
-//                    preferences.putCheckPref("page18", true);
-//                } else {
-//                    MainActivity.result.removeItem(18);
-//                    checkPage18.setChecked(false);
-//                    preferences.putCheckPref("page18", false);
-//                }
-//                break;
-//            case R.id.checkPage19:
-//                if (compoundButton.isChecked()) {
-//                    MainActivity.result.addItemAtPosition(MainActivity.item_page19, 5);
-//                    checkPage19.setChecked(true);
-//                    preferences.putCheckPref("page19", true);
-//                } else {
-//                    MainActivity.result.removeItem(19);
-//                    checkPage19.setChecked(false);
-//                    preferences.putCheckPref("page19", false);
-//                }
-//                break;
-//            case R.id.checkPage20:
-//                if (compoundButton.isChecked()) {
-//                    MainActivity.result.addItemAtPosition(MainActivity.item_page20, 5);
-//                    checkPage20.setChecked(true);
-//                    preferences.putCheckPref("page20", true);
-//                } else {
-//                    MainActivity.result.removeItem(20);
-//                    checkPage20.setChecked(false);
-//                    preferences.putCheckPref("page20", false);
-//                }
-//                break;
-//            case R.id.checkPage21:
-//                if (compoundButton.isChecked()) {
-//                    MainActivity.result.addItemAtPosition(MainActivity.item_page21, 5);
-//                    checkPage21.setChecked(true);
-//                    preferences.putCheckPref("page21", true);
-//                } else {
-//                    MainActivity.result.removeItem(21);
-//                    checkPage21.setChecked(false);
-//                    preferences.putCheckPref("page21", false);
-//                }
-//                break;
-//            case R.id.checkPage22:
-//                if (compoundButton.isChecked()) {
-//                    MainActivity.result.addItemAtPosition(MainActivity.item_page22, 5);
-//                    checkPage22.setChecked(true);
-//                    preferences.putCheckPref("page22", true);
-//                } else {
-//                    MainActivity.result.removeItem(22);
-//                    checkPage22.setChecked(false);
-//                    preferences.putCheckPref("page22", false);
-//                }
-//                break;
+            case R.id.checkPage16:
+                if (compoundButton.isChecked()) {
+                    MainActivity.result.addItemAtPosition(MainActivity.item_page16, 5);
+                    checkPage16.setChecked(true);
+                    preferences.putCheckPref("page16", true);
+                } else {
+                    MainActivity.result.removeItem(16);
+                    checkPage16.setChecked(false);
+                    preferences.putCheckPref("page16", false);
+                }
+                break;
+            case R.id.checkPage17:
+                if (compoundButton.isChecked()) {
+                    MainActivity.result.addItemAtPosition(MainActivity.item_page17, 5);
+                    checkPage17.setChecked(true);
+                    preferences.putCheckPref("page17", true);
+                } else {
+                    MainActivity.result.removeItem(17);
+                    checkPage17.setChecked(false);
+                    preferences.putCheckPref("page17", false);
+                }
+                break;
+            case R.id.checkPage18:
+                if (compoundButton.isChecked()) {
+                    MainActivity.result.addItemAtPosition(MainActivity.item_page18, 5);
+                    checkPage18.setChecked(true);
+                    preferences.putCheckPref("page18", true);
+                } else {
+                    MainActivity.result.removeItem(18);
+                    checkPage18.setChecked(false);
+                    preferences.putCheckPref("page18", false);
+                }
+                break;
+            case R.id.checkPage19:
+                if (compoundButton.isChecked()) {
+                    MainActivity.result.addItemAtPosition(MainActivity.item_page19, 5);
+                    checkPage19.setChecked(true);
+                    preferences.putCheckPref("page19", true);
+                } else {
+                    MainActivity.result.removeItem(19);
+                    checkPage19.setChecked(false);
+                    preferences.putCheckPref("page19", false);
+                }
+                break;
+            case R.id.checkPage20:
+                if (compoundButton.isChecked()) {
+                    MainActivity.result.addItemAtPosition(MainActivity.item_page20, 5);
+                    checkPage20.setChecked(true);
+                    preferences.putCheckPref("page20", true);
+                } else {
+                    MainActivity.result.removeItem(20);
+                    checkPage20.setChecked(false);
+                    preferences.putCheckPref("page20", false);
+                }
+                break;
+            case R.id.checkPage21:
+                if (compoundButton.isChecked()) {
+                    MainActivity.result.addItemAtPosition(MainActivity.item_page21, 5);
+                    checkPage21.setChecked(true);
+                    preferences.putCheckPref("page21", true);
+                } else {
+                    MainActivity.result.removeItem(21);
+                    checkPage21.setChecked(false);
+                    preferences.putCheckPref("page21", false);
+                }
+                break;
+            case R.id.checkPage22:
+                if (compoundButton.isChecked()) {
+                    MainActivity.result.addItemAtPosition(MainActivity.item_page22, 5);
+                    checkPage22.setChecked(true);
+                    preferences.putCheckPref("page22", true);
+                } else {
+                    MainActivity.result.removeItem(22);
+                    checkPage22.setChecked(false);
+                    preferences.putCheckPref("page22", false);
+                }
+                break;
 //            case R.id.checkPage23:
 //                if (compoundButton.isChecked()) {
 //                    MainActivity.result.addItemAtPosition(MainActivity.item_page23, 5);

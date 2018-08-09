@@ -1,8 +1,10 @@
 package com.sharon.trollbabatelugu;
 
 import android.app.Fragment;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -114,13 +116,28 @@ public class ContentActivity extends Fragment {
                 new GraphRequest.Callback() {
                     @Override
                     public void onCompleted(GraphResponse response) {
-                        fr = new GsonBuilder().create().fromJson(response.getRawResponse(), FirstResponse.class);
-                        fastAdapter.clear();
-                        fastAdapter.add(fr.getData());
-                        for (int i = 0; i < fr.getData().size(); i++) {
-                            fr.getData().get(i).setPagepic(page_pic);
+                        if (response.getRawResponse().contains("fbtrace_id")) {
+                            //error
+                            new AlertDialog.Builder(getActivity())
+                                    .setTitle(R.string.page_error_title)
+                                    .setMessage(R.string.page_error_description)
+                                    .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
+                                        @Override
+                                        public void onClick(DialogInterface dialogInterface, int i) {
+
+                                        }
+                                    })
+                                    .setIcon(R.mipmap.ic_launcher)
+                                    .show();
+                        } else {
+                            fr = new GsonBuilder().create().fromJson(response.getRawResponse(), FirstResponse.class);
+                            fastAdapter.clear();
+                            fastAdapter.add(fr.getData());
+                            for (int i = 0; i < fr.getData().size(); i++) {
+                                fr.getData().get(i).setPagepic(page_pic);
+                            }
+                            after = fr.getPaging().getCursors().getAfter();
                         }
-                        after = fr.getPaging().getCursors().getAfter();
                     }
                 });
 
